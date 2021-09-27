@@ -1,0 +1,201 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto",sans-serif;
+}
+.back{
+	position: absolute;
+    font-size: 25px;
+    left: 55px;
+    color: black;
+    cursor: pointer;
+}
+.logo-bar{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 15px;
+	background: ;
+	padding-bottom: 10px;
+}
+.background-class  {
+	object-fit: cover;
+}
+article{
+	margin-top: -3.8em;
+    position: relative;
+    background: white;
+    border-radius: 50px;
+    background: #f7f7f7;
+}
+.menu{
+	padding-top: 30px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.menu-h2{
+	font-family: 'Shrikhand', cursive;
+	margin-left: 0.6em;
+    margin-right: 1em
+}
+.menu-enoncer{
+	margin-bottom: 40px;
+	margin-left: 10px;
+}
+.title-enoncer{
+	margin-left: 5px;
+}
+.title-enoncer-underline{
+	border-top: 3px solid #99e2d0;
+	width: 2rem;
+	margin-top: -0.5rem;
+	margin-left: 0.4rem;
+}
+.menu-info{
+	box-shadow: 0 0 20px #0000002e;
+	border-radius: 10px;
+	padding-left: 10px;
+}
+.menu-title{
+	padding-top: 10px;
+}
+
+.menu-desc{
+	margin-top: -15px;
+	padding-bottom: 10px;
+}
+.menu-price{
+	display: flex;
+    float: right;
+    margin-right: 20px;
+}
+/*Coeur*/
+.hover-heart{
+	position: absolute;
+	
+	font-size: 2rem;
+
+}
+.heart-vide{
+position: absolute;
+	bottom: 18px;
+    left: 350px;
+    opacity: 1;
+}
+.heart-plein{
+position: absolute;
+	bottom: 18px;
+    left: 350px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+}
+
+.container-menu .hover-heart:hover .heart-vide{
+	opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container-menu .hover-heart:hover .heart-plein {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+/*Coeur*/
+.bouton{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 30px;
+
+
+}
+.bouton input{
+	 box-shadow: 0px 0px 12px #00000033;
+	 background-image: linear-gradient(174deg, #FF79DA 0%, #9356DC 90%);
+     color: #fff;
+     border: 0 solid transparent;
+     padding: 20px 50px;
+     border-radius: 30px;
+     font-size: 0.9em;
+     cursor: pointer;
+     background-color:#fff;
+
+}
+input:hover{
+	background-image: linear-gradient(
+187deg, #FF79DA 35%, #9356DC 103%);;
+    box-shadow: 0rem 0rem 12px rgb(0 0 0 / 50%)
+}
+
+.footer-container{
+	background-color: #353535;;
+	line-height: 0.8rem;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	color: white;
+
+}
+.footer-container h4{
+	font-family: Shrikhand;
+	 margin-left: 20px;
+}
+.footer-container  div,p{
+	font-size: 0.5em;
+	
+}
+.footer-container  div,p,h4{
+	font-size: 0.8em; 
+}
+
+.texte-footer{
+	margin-left: 20px;
+}
+.footer-container .fas{
+	    padding-right: 10px;
+	    line-height: 1.8rem;
+}
+.marge-fas .fas.fa-utensils{
+	margin-left: 5px;
+}
+
+
+@media screen and (min-width: 840px) and (max-width: 2560px){
+	.body{
+		margin: 0;
+		padding: 0;
+}
+    article{
+    max-width: 1600px;
+    text-align: center;
+    margin: auto;
+    margin-top: -6em;
+    }
+    .background-class {
+    	height: 550px;
+    }
+    .container-entrees{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    }
+	.title-enoncer-underline{
+		margin-left: 12.5rem;
+	}
+	.heart-vide{
+        left: 900px;
+	}
+	.heart-plein{
+		left: 900px;
+	}
+	.footer-container{
+		line-height: normal;
+		text-align: center;
+
+	}
+	.contact{
+		color: white;	
+		text-decoration: none;
+		font-family: "Roboto",sans-serif;
+
+	}
+}
+
