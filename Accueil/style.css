@@ -8,6 +8,36 @@ body{
     
     list-style: none;
 }
+/*
+.container-loader{
+	position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+	z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	background-color : rgba(255,255,255,0.77);
+    animation: loader .01s; 
+    animation-delay: 0.80s;
+	animation-fill-mode: both;
+}
+.loader {
+	border: 16px solid #FF79DA; 
+	border-top: 16px solid #9356DC; 
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
+  */
 h1 h2 h3 h4{
 	font-family: 'Shrikhand', cursive;
 }
@@ -140,9 +170,7 @@ input:hover{
 .card-info{
 	margin-left: 10px;
 	padding-bottom: 2px;
-	
-
-	
+	position: relative;	
 }
 .card-info p{
 	margin-top: -20px;
@@ -157,20 +185,18 @@ input:hover{
 /*Coeur*/
 .hover-heart{
 	position: absolute;
-	    
+	top: 0;
+	right: 2em;	    
 	font-size: 2rem;
-
 }
 .heart-vide{
 position: absolute;
-	bottom: 25px;
-	left: 350px;
+	
     opacity: 1;
 }
 .heart-plein{
     position: absolute;
-	bottom: 25px;
-	left: 350px;
+	
     background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

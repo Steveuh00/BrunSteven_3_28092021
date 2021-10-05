@@ -31,6 +31,7 @@ article{
 	padding-top: 30px;
     margin-left: 1em;
     margin-right: 1em;
+	position: relative;
 }
 .menu-h2{
 	font-family: 'Shrikhand', cursive;
@@ -54,6 +55,9 @@ article{
 	box-shadow: 0 0 20px #0000002e;
 	border-radius: 10px;
 	padding-left: 10px;
+	
+	flex: 1;  
+	background-color: #fff;
 }
 .menu-title{
 	padding-top: 10px;
@@ -65,8 +69,24 @@ article{
 }
 .menu-price{
 	display: flex;
-    float: right;
+    justify-content: flex-end;
+    align-items: flex-end;
     margin-right: 20px;
+
+	
+    padding-left: 20px;
+	Background-color: white;
+}
+.container-menus{
+	background-color: #fff;
+display: flex;
+box-shadow: 0 0 20px #0000002e;
+}
+.container-check{
+	
+}
+.check-img{
+
 }
 /*Coeur*/
 .hover-heart{
@@ -178,14 +198,26 @@ input:hover{
     gap: 2rem;
     }
 	.title-enoncer-underline{
-		margin-left: 12.5rem;
+		display: block;
+		margin: 0 auto;
+		margin-top: -5px;
+	}
+	.hover-heart{
+		position: absolute;
+		top: 1.5em;
+        right: 2em;
+		
 	}
 	.heart-vide{
-        left: 900px;
-	}
-	.heart-plein{
-		left: 900px;
-	}
+		position: absolute;
+		left: unset;
+		bottom: unset;						
+		}
+		.heart-plein{
+		position: absolute;	
+		left: unset;
+		bottom: unset;					
+		}
 	.footer-container{
 		line-height: normal;
 		text-align: center;
