@@ -14,7 +14,6 @@ body{
 	display: flex;
 	justify-content: space-around;
 	margin-top: 15px;
-	background: ;
 	padding-bottom: 10px;
 }
 .background-class  {
@@ -50,44 +49,84 @@ article{
 	width: 2rem;
 	margin-top: -0.5rem;
 	margin-left: 0.4rem;
+	padding-bottom: 15px;
 }
 .menu-info{
 	box-shadow: 0 0 20px #0000002e;
-	border-radius: 10px;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
 	padding-left: 10px;
-	
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;	
 	flex: 1;  
 	background-color: #fff;
 }
-.menu-title{
-	padding-top: 10px;
-}
+
 
 .menu-desc{
 	margin-top: -15px;
-	padding-bottom: 10px;
+	
 }
 .menu-price{
 	display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     margin-right: 20px;
-
-	
+	align-items: center;
+	padding-right: 20px;	
     padding-left: 20px;
 	Background-color: white;
+	border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .container-menus{
-	background-color: #fff;
+	
 display: flex;
-box-shadow: 0 0 20px #0000002e;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
 }
 .container-check{
-	
+	height: 100%;
+	display: flex;
+	align-items: center;
+	width: 0;
+	visibility: hidden;
+	background-color: #99e2d0;
+    margin-left: 25px;
+	margin-right: -24px;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .check-img{
-
+	height: 1.5em;
+    width: 1.5em;
+    background-color: #fff;
+    padding-top: 4px;
+    border-radius: 100px;
+    padding-right: 2px;
+    padding-left: 2px;
+	transform: rotate(180deg);
+    transition-duration: .5s;
+	text-align: center;
 }
+.check-img .fas{
+	color: #99e2d0;
+}
+.container-menus:hover .container-check{
+	width: 6em;
+	transform: translateX(0px);
+    transition: 0.5s ease-in-out;	
+	visibility: visible;
+	
+}
+.container-menus:hover .check-img{
+	transform: rotate(0);
+	visibility: visible;
+	
+}
+
 /*Coeur*/
 .hover-heart{
 	position: absolute;
@@ -176,7 +215,9 @@ input:hover{
 .marge-fas .fas.fa-utensils{
 	margin-left: 5px;
 }
-
+.container-menus{
+	margin-bottom: 20px;
+}
 
 @media screen and (min-width: 840px) and (max-width: 2560px){
 	.body{
@@ -185,7 +226,7 @@ input:hover{
 }
     article{
     max-width: 1600px;
-    text-align: center;
+    
     margin: auto;
     margin-top: -6em;
     }
@@ -199,7 +240,7 @@ input:hover{
     }
 	.title-enoncer-underline{
 		display: block;
-		margin: 0 auto;
+		
 		margin-top: -5px;
 	}
 	.hover-heart{
