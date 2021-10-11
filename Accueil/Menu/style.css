@@ -81,11 +81,11 @@ article{
     border-bottom-right-radius: 20px;
 }
 /*Le fameux tchek*/
-.container-menus{
-	
+.container-menus{	
 display: flex;
 border-top-right-radius: 20px;
 border-bottom-right-radius: 20px;
+
 
 }
 .container-check{
@@ -100,6 +100,9 @@ border-bottom-right-radius: 20px;
     justify-content: center;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+	
+	
+	
 }
 .check-img{
 	height: 1.5em;
@@ -112,22 +115,38 @@ border-bottom-right-radius: 20px;
 	transform: rotate(180deg);
     transition-duration: .5s;
 	text-align: center;
+	
+	
+	
+	
 }
 .check-img .fas{
 	color: #99e2d0;
+	
+	
 }
 .container-menus:hover .container-check{
 	width: 6em;
-	transform: translateX(0px);
+	
     transition: 0.5s ease-in-out;	
 	visibility: visible;
+	
+	
 	
 }
 .container-menus:hover .check-img{
 	transform: rotate(0);
-	visibility: visible;
+	
+    visibility: visible;
+	
 	
 }
+@keyframes rotateCheck {
+	0% { transform: rotate(0deg) }
+	100% { transform: rotate(360deg) }
+}
+	
+	
 
 /*Coeur*/
 .hover-heart{
@@ -139,13 +158,13 @@ border-bottom-right-radius: 20px;
 .heart-vide{
 position: absolute;
 	bottom: 18px;
-    left: 350px;
+    left: 270px;
     opacity: 1;
 }
 .heart-plein{
 position: absolute;
 	bottom: 18px;
-    left: 350px;
+    left: 270px;
     background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -161,6 +180,7 @@ position: absolute;
     opacity: 1;
     transition: 0.3s ease-in-out;
 }
+
 /*Coeur*/
 .bouton{
 	display: flex;
@@ -217,14 +237,13 @@ input:hover{
 .marge-fas .fas.fa-utensils{
 	margin-left: 5px;
 }
+/*Animation de page*/
 .container-menus{
 	margin-bottom: 20px;
 	animation: anim 2s forwards;
 	
 }
-.container-entrees{
-	
-}
+
 
 @keyframes anim {
 	from {
@@ -267,7 +286,7 @@ animation-delay: 0.2s;
 .animation-10{
 	animation-delay: 1.0s;
 }
-@media screen and (min-width: 940px) and (max-width: 2560px){
+@media screen and (min-width: 1140px) and (max-width: 2560px){
 	.body{
 		margin: 0;
 		padding: 0;

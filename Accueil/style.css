@@ -159,6 +159,7 @@ input:hover{
 .card{
 	background: white;
 	border-radius: 10px ;
+	position: relative;
 }
 .card-resto{
 	margin-left: 2rem;
@@ -186,6 +187,19 @@ input:hover{
 	margin-top: 10px;
 	font-size: 1.1em;
 	padding-top: 5px;
+}
+
+.new{
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+	background-color: #99e2d0;
+    color: #1b6150;
+	
+	padding-right: 10px;
+    padding-left: 10px;
+
+	
 }
 /*Coeur*/
 .hover-heart{
