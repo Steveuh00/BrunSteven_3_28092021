@@ -85,8 +85,6 @@ article{
 display: flex;
 border-top-right-radius: 20px;
 border-bottom-right-radius: 20px;
-
-
 }
 .container-check{
 	height: 100%;
@@ -100,9 +98,6 @@ border-bottom-right-radius: 20px;
     justify-content: center;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-	
-	
-	
 }
 .check-img{
 	height: 1.5em;
@@ -112,40 +107,32 @@ border-bottom-right-radius: 20px;
     border-radius: 100px;
     padding-right: 2px;
     padding-left: 2px;
-	transform: rotate(180deg);
+	
     transition-duration: .5s;
-	text-align: center;
-	
-	
-	
-	
+	text-align: center;	
 }
 .check-img .fas{
 	color: #99e2d0;
 	
-	
 }
 .container-menus:hover .container-check{
-	width: 6em;
-	
+	width: 6em;	
     transition: 0.5s ease-in-out;	
 	visibility: visible;
-	
-	
-	
+	animation: 0.5s  forwards;
 }
 .container-menus:hover .check-img{
 	transform: rotate(0);
-	
-    visibility: visible;
-	
-	
+	animation: 0.5s rotatecheck forwards;
+    visibility: visible;		
 }
-@keyframes rotateCheck {
+
+
+@keyframes rotatecheck {
 	0% { transform: rotate(0deg) }
 	100% { transform: rotate(360deg) }
 }
-	
+
 	
 
 /*Coeur*/
@@ -240,7 +227,10 @@ input:hover{
 /*Animation de page*/
 .container-menus{
 	margin-bottom: 20px;
-	animation: anim 2s forwards;
+	
+	animation: anim .5s ease-in-out;
+    animation-fill-mode: none;
+animation-fill-mode: backwards;
 	
 }
 
@@ -257,10 +247,14 @@ input:hover{
 	}
 
 .animation-1{
-animation-delay: 0.1s;
+animation-delay: 0.15s;
+animation: anim .5s ease-in-out;
+    
+
 }
 .animation-2{
 animation-delay: 0.2s;
+
 }
 .animation-3{
 	animation-delay: 0.3s;
