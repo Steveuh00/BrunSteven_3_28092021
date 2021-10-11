@@ -194,8 +194,7 @@ input:hover{
 	right: 1rem;
 	top: 1rem;
 	background-color: #99e2d0;
-    color: #1b6150;
-	
+    color: #1b6150;	
 	padding-right: 10px;
     padding-left: 10px;
 
@@ -234,7 +233,7 @@ position: absolute;
 /*Coeur*/
 
 .footer-container{
-	background-color: #354146;
+	background: rgba(23, 23, 23, 0.8);
 	line-height: 0.8rem;
 	padding-top: 15px;
 	padding-bottom: 15px;

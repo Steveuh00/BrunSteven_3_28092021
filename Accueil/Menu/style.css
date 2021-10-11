@@ -208,7 +208,7 @@ input:hover{
 }
 
 .footer-container{
-	background-color: #353535;;
+	background: rgba(23, 23, 23, 0.8);
 	line-height: 0.8rem;
 	padding-top: 10px;
 	padding-bottom: 15px;
