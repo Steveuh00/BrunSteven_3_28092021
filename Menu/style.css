@@ -61,29 +61,13 @@ article{
     overflow: hidden;	
 	flex: 1;  
 	background-color: #fff;
-	
 }
 
-
-.menu-info .menu-title {
-	overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-h3{
-	overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
 
 .menu-desc{
 	margin-top: -15px;
-	overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
 	
-
+}
 .menu-price{
 	display: flex;
     justify-content: flex-end;
