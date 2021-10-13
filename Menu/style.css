@@ -63,9 +63,16 @@ article{
 	background-color: #fff;
 }
 
-
+.menu-title{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 .menu-desc{
 	margin-top: -15px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 	
 }
 .menu-price{
@@ -259,6 +266,9 @@ animation-delay: 0.2s;
 }
 .animation-3{
 	animation-delay: 0.3s;
+}
+.animation3-5{
+	animation-delay: 0.35s;
 }
 .animation-4{
 	animation-delay: 0.4s;
