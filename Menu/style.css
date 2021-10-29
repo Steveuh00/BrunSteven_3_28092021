@@ -98,9 +98,9 @@ main{
 	display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-right: 20px;
+    
 	align-items: center;
-	padding-right: 30px;	
+	padding-right: 20px;	
     padding-left: 20px;
 	Background-color: white;
 	border-top-right-radius: 20px;
